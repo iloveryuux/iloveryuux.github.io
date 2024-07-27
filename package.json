@@ -13,8 +13,7 @@
 		"lint": "biome lint --write",
 		"format:check": "biome format",
 		"lint:check": "biome lint",
-		"check": "biome check",
-		"prepare": "lefhook install"
+		"check": "biome check"
 	},
 	"dependencies": {
 		"@astrojs/check": "0.8.3",

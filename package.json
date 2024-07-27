@@ -28,7 +28,7 @@
 		"@astrojs/tailwind": "5.1.0",
 		"@biomejs/biome": "1.8.3",
 		"@commitlint/cli": "19.3.0",
-		"@ryuux/commitlint-config": "2.0.0",
+		"@ryuux/config": "1.0.1",
 		"lefthook": "1.7.9"
 	}
 }

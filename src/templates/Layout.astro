@@ -1,12 +1,17 @@
 ---
 import '@/styles/global.css'
+import Head from './Head.astro'
 
-interface Props {
-	title?: string
-	description?: string
+import type { MetaData } from '@/types'
+
+export interface Props {
+	metadata?: MetaData
 }
+
+const { metadata = {} } = Astro.props
 ---
 <html lang="en">
+<Head {...metadata}/>	
 <body class="bg-background-color text-primary-color font-inter max-w-2xl m-auto min-h-screen p-6 pt-6">
    <slot/> 
 </body>

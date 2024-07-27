@@ -1,0 +1,47 @@
+---
+import type { MetaData } from '@/types'
+import { SEO } from 'astro-seo'
+
+const { title, description, og } = Astro.props
+
+type Props = MetaData
+
+const DEFAULT_TITLE = 'Ryo | Portfolio'
+const DEFAULT_DESCRIPTION = 'ryo portfolio created on astro'
+
+const openGraph = {
+	title: title || og?.title || DEFAULT_TITLE,
+	type: og?.type || 'website',
+	image: og?.image || '',
+	alt: og?.alt || 'portfolio ryo website',
+	description: description || og?.description || DEFAULT_DESCRIPTION,
+}
+---
+
+<head>
+  <SEO
+    charset="utf8"
+    title={title || DEFAULT_TITLE}
+    description={description || DEFAULT_DESCRIPTION},
+    openGraph={{
+      basic: openGraph,
+      image: {
+        alt: openGraph.alt
+      }
+    }},
+    extend={{
+    link:  [
+      { rel: 'icon', href: '/favicon.svg' },
+      { rel: 'sitemap', href: '/sitemap-index.xml'}
+    ],
+    meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'generator', content: Astro.generator },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: openGraph.title },
+    { name: 'twitter:description', content: openGraph.description },
+    { name: 'twitter:site', content: '@iloveryuux' },
+    ]
+  }}
+  />
+</head>

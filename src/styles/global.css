@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: 0deg 100% 0%;
+  --white: 0deg 100% 100%;
+  --grey: 215deg 14% 34%;
+  --light-grey: 218deg 11% 65%;
+  --soft-grey: 220deg 13% 91%;
+
+  --blue: 221deg 83% 53%;
+  --indigo: 243deg 75% 59%;
+  --violet: 262deg 83% 58%;
+  --rose: 347deg 77% 50%;
+  --amber: 32deg 95% 44%;
+  --cyan: 192deg 91% 36%;
+  --emerald: 161deg 94% 30%;
+}
+
+@layer base {
+  [data-theme='light'] {
+    --background-color: var(--white);
+    --text-color: var(--black);
+    --footer-color: var(--grey);
+    --underline-color: var(--light-grey);
+    --footer-hover-color: var(--black);
+    --card-color: var(--soft-grey);
+    --card-hover-color: var(--grey);
+
+    --underline-color1: var(--blue);
+    --underline-color2: var(--indigo);
+    --underline-color3: var(--violet);
+    --underline-color4: var(--rose);
+    --underline-color5: var(--amber);
+    --underline-color6: var(--cyan);
+    --underline-color7: var(--emerald);
+    color-scheme: light;
+  }
+
+  [data-theme='dark'] {
+    --background-color: var(--black);
+    --text-color: var(--white);
+    --footer-color: var(--soft-grey);
+    --underline-color: var(--light-grey);
+    --footer-hover-color: var(--white);
+    --card-color: var(--light-grey);
+    --card-hover-color: var(--soft-grey);
+
+    --underline-color1: var(--white);
+    --underline-color2: var(--white);
+    --underline-color3: var(--white);
+    --underline-color4: var(--white);
+    --underline-color5: var(--white);
+    --underline-color6: var(--white);
+    --underline-color7: var(--white);
+    color-scheme: dark;
+  }
+}

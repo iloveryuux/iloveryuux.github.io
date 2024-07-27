@@ -1,0 +1,29 @@
+---
+import SunMoon from '@/icons/SunMoon.astro'
+---
+
+<button
+  id="theme-switch"
+  class="flex items-center ml-5 px-2 transition-transform hover:rotate-12"
+  aria-label="Theme Toggle"
+>
+  <SunMoon />
+</button>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const $button = document.getElementById('theme-switch') as HTMLElement
+    const $html = document.documentElement
+
+    $button.addEventListener('click', function () {
+      const currentTheme = $html.getAttribute('data-theme') || localStorage.getItem('theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+      
+      $html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme)
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    const systemTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    $html.setAttribute('data-theme', savedTheme || systemTheme)
+  })
+</script>

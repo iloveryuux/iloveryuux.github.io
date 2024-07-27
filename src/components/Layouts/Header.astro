@@ -1,0 +1,23 @@
+---
+import Navigation from '@/ui/Navigation.astro'
+import Icon from '@/icons/Icon.astro'
+import ThemeToggle from '@/ui/ThemeToggle.astro'
+---
+
+<header class="flex items-center mt-2 py-2">
+  <Icon />
+  <nav class="flex justify-end grow">
+    <div class="md:flex hidden gap-5">
+      <Navigation redirect="/about" underlineColor="decoration-blue-500">
+        /about
+      </Navigation>
+      <Navigation redirect="/projects" underlineColor="decoration-green-500">
+        /projects
+      </Navigation>
+      <Navigation redirect="/skills" underlineColor="decoration-red-500">
+        /skills
+      </Navigation>
+    </div>
+    <ThemeToggle/>
+  </nav>
+</header>

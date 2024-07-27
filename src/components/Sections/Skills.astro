@@ -1,0 +1,50 @@
+---
+import AstroIcon from '@/skills/Astro.astro'
+import BashIcon from '@/skills/Bash.astro'
+import CssIcon from '@/skills/CSS.astro'
+import DockerIcon from '@/skills/Docker.astro'
+import ExpressIcon from '@/skills/Express.astro'
+import GitIcon from '@/skills/Git.astro'
+import HtmlIcon from '@/skills/HTML.astro'
+import JavascriptIcon from '@/skills/Javascript.astro'
+import MongoDBicon from '@/skills/MongoDB.astro'
+import NextIcon from '@/skills/Next.astro'
+import PythonIcon from '@/skills/Python.astro'
+import ReactIcon from '@/skills/React.astro'
+import TailwindIcon from '@/skills/Tailwind.astro'
+import TypescriptIcon from '@/skills/Typescript.astro'
+import VercelIcon from '@/skills/Vercel.astro'
+
+import Title from '@/ui/Title.astro'
+
+const skills = [
+	{ Icon: HtmlIcon, name: 'HTML' },
+	{ Icon: CssIcon, name: 'CSS' },
+	{ Icon: TailwindIcon, name: 'Tailwind' },
+	{ Icon: JavascriptIcon, name: 'Javascript' },
+	{ Icon: TypescriptIcon, name: 'Typescript' },
+	{ Icon: ExpressIcon, name: 'Express' },
+	{ Icon: AstroIcon, name: 'Astro' },
+	{ Icon: ReactIcon, name: 'React' },
+	{ Icon: NextIcon, name: 'Next' },
+	{ Icon: MongoDBicon, name: 'MongoDB' },
+	{ Icon: DockerIcon, name: 'Docker' },
+	{ Icon: GitIcon, name: 'Git' },
+	{ Icon: PythonIcon, name: 'Python' },
+	{ Icon: BashIcon, name: 'Bash' },
+	{ Icon: VercelIcon, name: 'Vercel' },
+]
+---
+<section>
+  <Title>Skills</Title>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-3 lg:gap-2 xl:gap-3">
+    {skills.map((skill) => (
+      <div
+        class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-1 hover:border-card-hover-color"
+      >
+        <skill.Icon />
+        <span class="text-xs ml-2">{skill.name}</span>
+      </div>
+    ))}
+  </div>
+</section>

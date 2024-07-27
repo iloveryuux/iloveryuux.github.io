@@ -1,0 +1,10 @@
+---
+const { underlineColor, redirect } = Astro.props
+---
+
+<a
+  href={redirect}
+  class={`underline decoration-2 underline-offset-2 decoration-dotted hover:decoration-solid ${underlineColor}`}
+>
+  <slot />
+</a>

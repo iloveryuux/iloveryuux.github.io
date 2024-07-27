@@ -1,0 +1,33 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"javascript": {
+		"globals": ["Astro"],
+		"formatter": {
+			"enabled": true,
+			"jsxQuoteStyle": "single",
+			"semicolons": "asNeeded",
+			"quoteStyle": "single",
+			"trailingCommas": "es5",
+			"lineEnding": "lf",
+			"arrowParentheses": "asNeeded",
+			"quoteProperties": "asNeeded"
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": true,
+			"indentStyle": "space",
+			"quoteStyle": "single",
+			"lineEnding": "lf"
+		}
+	}
+}

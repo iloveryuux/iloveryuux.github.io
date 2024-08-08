@@ -18,12 +18,12 @@ export default {
         'underline-color4': 'hsl(var(--underline-color4) / 0.2)',
         'underline-color5': 'hsl(var(--underline-color5) / 0.2)',
         'underline-color6': 'hsl(var(--underline-color6) / 0.2)',
-        'underline-color7': 'hsl(var(--underline-color7) / 0.2)',
+        'underline-color7': 'hsl(var(--underline-color7) / 0.2)'
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      },
-    },
+        inter: ['Inter', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

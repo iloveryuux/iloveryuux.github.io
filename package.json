@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.5",
     "@commitlint/cli": "19.8.1",
     "@ryuux/rules": "1.1.2",
     "lefthook": "1.11.14"

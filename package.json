@@ -17,18 +17,18 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/sitemap": "3.5.0",
-    "astro": "5.13.2",
+    "@astrojs/sitemap": "3.6.0",
+    "astro": "5.13.8",
     "astro-robots-txt": "1.0.0",
     "astro-seo": "0.8.4",
-    "tailwindcss": "4.1.12",
+    "tailwindcss": "4.1.13",
     "typescript": "5.9.2"
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "2.2.0",
+    "@biomejs/biome": "2.2.4",
     "@commitlint/cli": "19.8.1",
     "@ryuux/rules": "1.1.2",
-    "lefthook": "1.12.3"
+    "lefthook": "1.13.1"
   }
 }

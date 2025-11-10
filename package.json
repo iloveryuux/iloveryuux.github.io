@@ -29,6 +29,6 @@
     "@biomejs/biome": "2.3.4",
     "@commitlint/cli": "20.1.0",
     "@ryuux/rules": "1.1.2",
-    "lefthook": "1.13.6"
+    "lefthook": "2.0.2"
   }
 }

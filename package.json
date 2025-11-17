@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/check": "0.9.5",
     "@astrojs/sitemap": "3.6.0",
-    "astro": "5.15.4",
+    "astro": "5.15.6",
     "astro-robots-txt": "1.0.0",
     "astro-seo": "0.8.4",
     "tailwindcss": "4.1.17",
@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "2.3.4",
+    "@biomejs/biome": "2.3.5",
     "@commitlint/cli": "20.1.0",
     "@ryuux/rules": "1.1.2",
-    "lefthook": "2.0.2"
+    "lefthook": "2.0.4"
   }
 }

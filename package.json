@@ -18,16 +18,16 @@
   "dependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/sitemap": "3.7.0",
-    "astro": "5.17.2",
+    "astro": "5.17.3",
     "astro-robots-txt": "1.0.0",
     "astro-seo": "1.1.0",
-    "tailwindcss": "4.1.18",
+    "tailwindcss": "4.2.0",
     "typescript": "5.9.3"
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "2.3.15",
-    "@commitlint/cli": "20.4.1",
+    "@biomejs/biome": "2.4.3",
+    "@commitlint/cli": "20.4.2",
     "@ryuux/rules": "1.1.2",
     "lefthook": "2.1.1"
   }

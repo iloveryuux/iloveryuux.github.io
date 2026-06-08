@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",
-    "@astrojs/sitemap": "3.7.2",
-    "astro": "6.3.7",
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "6.4.4",
     "astro-robots-txt": "1.0.0",
     "astro-seo": "1.1.0",
     "tailwindcss": "4.3.0",
@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "2.4.15",
-    "@commitlint/cli": "21.0.1",
+    "@biomejs/biome": "2.4.16",
+    "@commitlint/cli": "21.0.2",
     "@ryuux/rules": "1.1.2",
-    "lefthook": "2.1.8"
+    "lefthook": "2.1.9"
   }
 }

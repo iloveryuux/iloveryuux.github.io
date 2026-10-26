@@ -16,9 +16,9 @@
     "check": "biome check"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.10",
+    "@astrojs/check": "0.9.12",
     "@astrojs/sitemap": "3.7.4",
-    "astro": "7.4.0",
+    "astro": "7.4.2",
     "astro-robots-txt": "1.0.0",
     "astro-seo": "1.2.0",
     "tailwindcss": "4.3.3",
@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "@biomejs/biome": "2.5.15",
-    "@commitlint/cli": "21.2.3",
+    "@biomejs/biome": "2.6.2",
+    "@commitlint/cli": "21.2.4",
     "@ryuux/rules": "1.1.2",
     "lefthook": "2.2.2"
   }
